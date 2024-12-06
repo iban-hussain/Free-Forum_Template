@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <nav class="menu hide" id="menu">
+                <span class="close-btn" id="close-btn" onclick="toggleMenu()"><i class="fa fa-close"></i></span>
+                <ul class="menu-list">
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="detail.html">Details</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" id="menuIcon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            <div class="logo">Discussion Hub</div>
+        </div>
+        <!-- Search Section -->
+        <div class="search-bar">
+            <div>
+                <select name="searchOptions" id="searchOptions">
+                    <option value="All">All</option>
+                    <option value="Headings">Headings</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="query" placeholder="Search here...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span><a href="#">Discussion Hub</a> >> <a href="#">Category</a> >> <a href="#">Topic</a></span>
+        </div>
+
+        <!-- Main Topic -->
+        <div class="topic-section">
+            <div class="topic-header">
+                <div class="author-info">Author</div>
+                <div class="topic-title">Subject: Sample Topic (Viewed 1325 Times)</div>
+            </div>
+            <div class="topic-body">
+                <div class="author-info">
+                    <div class="username"><a href="#">UserName</a></div>
+                    <div>Member Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="User Avatar">
+                    <div>Posts: <u>45</u></div>
+                    <div>Reputation: <u>4586</u></div>
+                </div>
+                <div class="post-content">
+                    A sample post to illustrate the topic layout.
+                    <br>This showcases how the post will look.
+                    <br><br>
+                    Nothing extra or extravagant.
+                    <hr>
+                    Regards, UserName
+                    <br>
+                    <div class="comment-section">
+                        <button onclick="addComment()">Add Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment Form -->
+        <div class="comment-box hide" id="commentBox">
+            <textarea name="commentInput" placeholder="Add your comment..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
+
+        <!-- Comments Display -->
+        <div class="comments-list">
+            <div class="comment-entry">
+                <div class="author-info">
+                    <div class="username"><a href="#">AnotherUser</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2015/11/06/13/27/ninja-1027877_960_720.jpg" alt="User Avatar">
+                    <div>Posts: <u>455</u></div>
+                    <div>Reputation: <u>4586</u></div>
+                </div>
+                <div class="comment-content">
+                    This is a sample comment under the topic.
+                    <br>Demonstrates comment structure.
+                    <br><br>
+                    Clean and simple.
+                    <br>
+                    <div class="reply-section">
+                        <button onclick="addReply()">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Reply Form -->
+        <div class="reply-box hide" id="replyBox">
+            <textarea name="replyInput" placeholder="Write your reply..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+    
+    <footer>
+        <span>&copy; 2024 Discussion Hub | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

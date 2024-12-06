@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Header Section -->
+        <div class="navbar">
+            <nav class="menu hide" id="menu">
+                <span class="close-btn" id="close-btn" onclick="toggleMenu()"><i class="fa fa-close"></i></span>
+                <ul class="menu-list">
+                    <li><a href="forums.html">Discussion Boards</a></li>
+                    <li><a href="posts.html">Recent Posts</a></li>
+                    <li><a href="detail.html">Post Details</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" id="menuIcon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            <div class="logo">Community Hub</div>
+        </div>
+        <!-- Search Section -->
+        <div class="search-bar">
+            <div>
+                <select id="searchCategory">
+                    <option value="All">All Categories</option>
+                    <option value="Headings">Headings</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="searchInput" placeholder="Search for topics...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <!-- Subforum Section -->
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>General Discussions</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="icon-wrapper">
+                    <i class="fa fa-car"></i>
+                </div>
+                <div class="description">
+                    <h4><a href="#">Topic Overview</a></h4>
+                    <p>A place for casual conversations and exchanging ideas with others.</p>
+                </div>
+                <div class="stats">
+                    <span>24 Posts | 12 Topics</span>
+                </div>
+                <div class="last-update">
+                    <b><a href="#">View Last Post</a></b> by <a href="#">User123</a>
+                    <br><small>12 Dec 2020</small>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Rows -->
+        <div class="subforum">
+            <div class="subforum-title">
+                <h1>Community Discussions</h1>
+            </div>
+            <div class="subforum-row">
+                <div class="icon-wrapper">
+                    <i class="fa fa-comments"></i>
+                </div>
+                <div class="description">
+                    <h4><a href="#">Topic Summary</a></h4>
+                    <p>Engage in thoughtful dialogues on various subjects.</p>
+                </div>
+                <div class="stats">
+                    <span>34 Posts | 18 Topics</span>
+                </div>
+                <div class="last-update">
+                    <b><a href="#">Latest Post</a></b> by <a href="#">Contributor</a>
+                    <br><small>14 Dec 2020</small>
+                </div>
+            </div>
+            <hr class="divider">
+            <!-- Repeat similar rows with variation -->
+        </div>
+    </div>
+
+    <!-- Forum Stats -->
+    <div class="forum-stats">
+        <div class="overview">
+            <span><u>5,369</u> posts across <u>48</u> topics from <u>8,124</u> members.</span>
+        </div>
+        <div>
+            <span>Latest post: <b><a href="#">Discussion Thread</a></b> on Dec 15, 2021, by <a href="#">ActiveUser</a>.</span>
+        </div>
+        <span><a href="#">Explore New Posts</a></span>
+    </div>
+
+    <footer>
+        <span>&copy; 2024 Community Hub | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
