@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <div class="navbar">
+            <nav class="menu hide" id="menu">
+                <span class="close-btn" id="close-btn" onclick="toggleMenu()"><i class="fa fa-close"></i></span>
+                <ul class="menu-list">
+                    <li><a href="forums.html">Categories</a></li>
+                    <li><a href="posts.html">Latest Discussions</a></li>
+                    <li><a href="detail.html">Post Details</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" id="menuIcon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            <div class="logo">Discussion Hub</div>
+        </div>
+        <!-- Search Section -->
+        <div class="search-bar">
+            <div>
+                <select name="filter" id="filter">
+                    <option value="all">All</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" placeholder="Search topics...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navigation Breadcrumb -->
+        <div class="breadcrumb">
+            <span><a href="#">Discussion Hub</a> >> <a href="#">Category</a></span>
+        </div>
+
+        <!-- Posts Table -->
+        <div class="posts-table">
+            <div class="table-header">
+                <div class="status">Status</div>
+                <div class="subjects">Topic</div>
+                <div class="replies">Replies & Views</div>
+                <div class="last-update">Last Activity</div>
+            </div>
+
+            <!-- Repeated Rows -->
+            <div class="table-row">
+                <div class="status"><i class="fa fa-rocket"></i></div>
+                <div class="subjects">
+                    <a href="#">Is learning Python still relevant in 2023?</a>
+                    <br><span>Posted by <b><a href="#">Contributor</a></b></span>
+                </div>
+                <div class="replies">
+                    4 replies <br> 300 views
+                </div>
+                <div class="last-update">
+                    Nov 15, 2023
+                    <br>by <b><a href="#">Contributor</a></b>
+                </div>
+            </div>
+            
+            <!-- Add more rows here with variations as needed -->
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            Pages: <a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
+        </div>
+    </div>
+
+    <!-- Topic Notes -->
+    <div class="topic-notes">
+        <span><i class="fa fa-frown-o"></i>&nbsp; No Engagement</span>&nbsp;&nbsp;<a href="#"><i class="fa fa-share-square"></i></a><br>
+        <span><i class="fa fa-book"></i>&nbsp; Low Engagement</span>&nbsp;&nbsp;<a href="#"><i class="fa fa-share-square"></i></a><br>
+        <span><i class="fa fa-fire"></i>&nbsp; Popular</span>&nbsp;&nbsp;<a href="#"><i class="fa fa-share-square"></i></a><br>
+        <span><i class="fa fa-rocket"></i>&nbsp; High Engagement</span>&nbsp;&nbsp;<a href="#"><i class="fa fa-share-square"></i></a><br>
+        <span><i class="fa fa-lock"></i>&nbsp; Closed</span>&nbsp;&nbsp;<a href="#"><i class="fa fa-share-square"></i></a><br>
+    </div>
+
+    <footer>
+        <span>&copy; 2024 Discussion Hub | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
