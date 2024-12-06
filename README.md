@@ -14,4 +14,5 @@ A template of a community discussion website made by HTML-CSS-Javascript
 
 ---
 
-![](![Project2](https://github.com/user-attachments/assets/5a3c5800-092c-48e3-b8ab-418c2740f5cf))
+![](![Project2](https://github.com/user-attachments/assets/5a3c5800-092c-48e3-b8ab-418c2740f5cf)
+)
